@@ -1,0 +1,25 @@
+#register-column #register-60x #register-form{
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border-color: #ba68c8;
+}
+
+.profile-button{
+    background: #BA68C8;
+    box-shadow: none;
+    border: none;
+}
+
+.profile-button:hover{
+    background: #682773;
+    
+}
+
+.profile-button:hover{
+    background: #682773;
+    box-shadow: none;
+}
