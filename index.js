@@ -2,32 +2,32 @@ const express = require('express');
 
 const server = express();
 
-server.get('/index',()=>{
-    console.log('Você está tentando acessar inicial')
+server.get('/index',(req, res)=>{
+    res.sendFile(path.join(___dirname+'Projeto-WEB-main\index.html'));
 })
 
-server.get('/esqSenha',()=>{
-    console.log('Você está tentando acessar esqueceu senha')
+server.get('/esqSenha',(req, res)=>{
+    res.sendFile(path.join(___dirname+'Projeto-WEB-main\esqSenha.html'));
 })
 
-server.get('/login',()=>{
-    console.log('Você está tentando acessar login')
+server.get('/login',(req, res)=>{
+    res.sendFile(path.join(___dirname+'pythonhead\login.html'));
 })
 
-server.get('/perfil',()=>{
-    console.log('Você está tentando acessar perfil')
+server.get('/perfil',(req, res)=>{
+    res.sendFile(path.join(___dirname+'pythonhead\perfil.html'));
 })
 
-server.get('/personais',()=>{
-    console.log('Você está tentando acessar personais')
+server.get('/personais',(req, res)=>{
+    res.sendFile(path.join(___dirname+'pythonhead\personais.html'));
 })
 
-server.get('/registrar',()=>{
-    console.log('Você está tentando acessar registrar')
+server.get('/registrar',(req, res)=>{
+    res.sendFile(path.join(___dirname+'pythonhead\registrar.html'));
 })
 
-server.get('/tarefas',()=>{
-    console.log('Você está tentando acessar tarefas')
+server.get('/tarefas',(req, res)=>{
+    res.sendFile(path.join(___dirname+'pythonhead\tarefas.html'));
 })
 
 server.listen(3000)
